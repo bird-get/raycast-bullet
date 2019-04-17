@@ -53,16 +53,16 @@ Please refer to the notecard for the full license, usage instructions, tips, etc
 
 
 // INCLUDES //
-#include "debug.lsl"
-#include "normal2Rot.lsl"
-#include "raycast_bullet.trailEffect_smoke.lsl"
-#include "raycast_bullet.impactPrim_bullet.lsl"
-#include "raycast_bullet.impactGround.lsl"
-#include "raycast_bullet.killMessage.lsl"
-#include "raycast_bullet.killAvatar.lsl"
-#include "raycast_bullet.travel.lsl"
-#include "raycast_bullet.primDamage.lsl"
-#include "raycast_bullet.rpDamage.lsl"
+#include "include/debug.lsl"
+#include "include/normal2Rot.lsl"
+#include "include/raycast_bullet.trailEffect_smoke.lsl"
+#include "include/raycast_bullet.impactPrim_bullet.lsl"
+#include "include/raycast_bullet.impactGround.lsl"
+#include "include/raycast_bullet.killMessage.lsl"
+#include "include/raycast_bullet.killAvatar.lsl"
+#include "include/raycast_bullet.travel.lsl"
+#include "include/raycast_bullet.primDamage.lsl"
+#include "include/raycast_bullet.rpDamage.lsl"
 
 
 // START OF CODE //
