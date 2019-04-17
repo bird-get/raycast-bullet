@@ -12,7 +12,7 @@ although it will need a lot of testing.
 A viewer with the LSL preprocessor enabled is required to compile! (Firestorm for example)
 Good scripting knowledge is also preferred.
 
-Simply edit the parameters, put the code into a 3-prim object invisible and it's good to go.
+Simply edit the parameters, put the code into a 3-prim object, make it invisible and it's good to go.
 If you are using the VARIABLE_VELOCITY switch, set the velocity in the rez param when rezzing the bullet.
 
 # Tips
