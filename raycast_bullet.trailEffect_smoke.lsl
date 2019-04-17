@@ -1,0 +1,66 @@
+/*
+Modular raycast bullet, made by Bridget Littlebird, 20th of October, 2014
+Copyright (C) 2014 Bridget Littlebird
+This code is licensed under the GNU General Public License version 3.0.
+Please refer to the notecard for the full license, usage instructions, tips, etc.
+*/
+
+#ifdef EFFECT_TRAIL
+trailEffect()
+{
+    llLinkParticleSystem(1, [
+        PSYS_PART_FLAGS, 1091, 
+        PSYS_SRC_PATTERN, 4, 
+        PSYS_PART_BLEND_FUNC_SOURCE, 7, 
+        PSYS_PART_BLEND_FUNC_DEST, 9, 
+        PSYS_SRC_TARGET_KEY, (key)"", 
+        PSYS_SRC_TEXTURE, "b965085a-c25a-3a65-1dc8-358d03e68fd6", 
+        PSYS_SRC_BURST_PART_COUNT, 1, 
+        PSYS_SRC_BURST_RATE, 0.100000, 
+        PSYS_SRC_BURST_RADIUS, 0.000000, 
+        PSYS_PART_MAX_AGE, 0.800000, 
+        PSYS_SRC_MAX_AGE, 0.000000, 
+        PSYS_SRC_ANGLE_BEGIN, 0.000000, 
+        PSYS_SRC_ANGLE_END, 0.000000, 
+        PSYS_SRC_BURST_SPEED_MIN, 0.000000, 
+        PSYS_SRC_BURST_SPEED_MAX, 0.000000, 
+        PSYS_PART_START_ALPHA, 0.150000, 
+        PSYS_PART_END_ALPHA, 0.000000, 
+        PSYS_PART_START_GLOW, 0.000000, 
+        PSYS_PART_END_GLOW, 0.000000, 
+        PSYS_SRC_OMEGA, <0.000000, 0.000000, 0.000000>, 
+        PSYS_SRC_ACCEL, <0.000000, 0.000000, 0.000000>, 
+        PSYS_PART_START_SCALE, <0.500000, 0.500000, 0.000000>, 
+        PSYS_PART_END_SCALE, <0.500000, 0.500000, 0.000000>, 
+        PSYS_PART_START_COLOR, <1.000000, 1.000000, 1.000000>, 
+        PSYS_PART_END_COLOR, <1.000000, 1.000000, 1.000000>]);
+    llLinkParticleSystem(2, [
+        PSYS_PART_FLAGS, 1091, 
+        PSYS_SRC_PATTERN, 4, 
+        PSYS_PART_BLEND_FUNC_SOURCE, 7, 
+        PSYS_PART_BLEND_FUNC_DEST, 9, 
+        PSYS_SRC_TARGET_KEY, (key)"", 
+        PSYS_SRC_TEXTURE, "b965085a-c25a-3a65-1dc8-358d03e68fd6", 
+        PSYS_SRC_BURST_PART_COUNT, 1, 
+        PSYS_SRC_BURST_RATE, 0.100000, 
+        PSYS_SRC_BURST_RADIUS, 0.000000, 
+        PSYS_PART_MAX_AGE, 0.800000, 
+        PSYS_SRC_MAX_AGE, 0.000000, 
+        PSYS_SRC_ANGLE_BEGIN, 0.000000, 
+        PSYS_SRC_ANGLE_END, 0.000000, 
+        PSYS_SRC_BURST_SPEED_MIN, 0.000000, 
+        PSYS_SRC_BURST_SPEED_MAX, 0.000000, 
+        PSYS_PART_START_ALPHA, 0.150000, 
+        PSYS_PART_END_ALPHA, 0.000000, 
+        PSYS_PART_START_GLOW, 0.000000, 
+        PSYS_PART_END_GLOW, 0.000000, 
+        PSYS_SRC_OMEGA, <0.000000, 0.000000, 0.000000>, 
+        PSYS_SRC_ACCEL, <0.000000, 0.000000, 0.000000>, 
+        PSYS_PART_START_SCALE, <0.500000, 0.500000, 0.000000>, 
+        PSYS_PART_END_SCALE, <0.500000, 0.500000, 0.000000>, 
+        PSYS_PART_START_COLOR, <1.000000, 1.000000, 1.000000>, 
+        PSYS_PART_END_COLOR, <1.000000, 1.000000, 1.000000>]);
+}
+#else
+#define trailEffect()
+#endif
